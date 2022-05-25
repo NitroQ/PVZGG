@@ -35,9 +35,14 @@ h1{
 p{
     font-family: 'Lato', sans-serif;
     font-weight: normal;
-    font-size: 1.5em;
     color: white;
+   @media screen and (min-width: 768px) {
+        font-size: 1.3em;
+    }
+       
 }
+
+
 // Nav Bar
 a {
 text-decoration: none;
@@ -50,7 +55,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 15px;
     background-color: $accent;
     color: $text-secondary;
     
@@ -70,7 +75,7 @@ nav{
    .menu {
     display: flex;
     gap: 1em;
-    font-size: 30px;
+    font-size: 1.5em;
     li:hover {
         background-color: $text-highlight;
         border-radius: 5px;
@@ -155,15 +160,40 @@ input[type=checkbox]{
 // nav bar end
 
 //banner
+#banner{
+    background-image: url('../images/mainpage.png');
+    background-size: cover;
+    border-radius: 20px;
+
+    @media screen and (max-width: 767px) {
+        &{
+            height: 40vh;
+            width: 100%;
+            background-position: left;
+            border: 10px solid $accent;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        &{
+            height: 60vh;
+            width: 80%;
+            background-position: center;
+            border: 15px solid $accent;
+
+        }
+    }
+}
+
+//section
 .section-1{
     display: flex;
     justify-content: center;
 }
 .section-2{
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 960px) {
     display: grid;
     padding: 10px;
-    grid-template-columns: 0.5fr 1fr;
+    grid-template-columns: 0.7fr 1fr;
     grid-gap: 1em;
     #pvz-main{
         img{
@@ -172,9 +202,9 @@ input[type=checkbox]{
     }
     .info{
         padding-top: 30px;
-        width: 70%;
+        width: 70%; 
         h1{
-            font-size: 3em;
+            font-size: 2.5em;
             text-align: left;
         }
         p{
@@ -182,13 +212,16 @@ input[type=checkbox]{
         }
     }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 959px) {
     display:flex;
     justify-content: center;
     flex-direction: column;
     #pvz-main{
         display: flex;
         justify-content: center;
+        img{
+            height: 200px;
+        }
     }
     .info{
         padding: 20px;
@@ -202,27 +235,6 @@ input[type=checkbox]{
 }
 }
 
-#banner{
-    background-image: url('../images/mainpage.png');
-    background-size: cover;
-    border-radius: 20px;
-    border: 20px solid $accent;
-
-    @media screen and (max-width: 767px) {
-        &{
-            height: 30vh;
-            width: 100%;
-            background-position: left;
-        }
-    }
-    @media screen and (min-width: 768px) {
-        &{
-            height: 60vh;
-            width: 80%;
-            background-position: center;
-        }
-    }
-}
 
 
     

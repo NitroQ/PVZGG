@@ -29,8 +29,13 @@ h1 {
 p {
   font-family: 'Lato', sans-serif;
   font-weight: normal;
-  font-size: 1.5em;
   color: white;
+}
+
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 1.3em;
+  }
 }
 
 a {
@@ -52,7 +57,7 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px;
+  padding: 15px;
   background-color: #FDD400;
   color: #000000;
 }
@@ -75,7 +80,7 @@ li {
   display: -ms-flexbox;
   display: flex;
   gap: 1em;
-  font-size: 30px;
+  font-size: 1.5em;
 }
 
 .menu li:hover {
@@ -170,6 +175,30 @@ input[type=checkbox] {
   }
 }
 
+#banner {
+  background-image: url("../images/mainpage.png");
+  background-size: cover;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  #banner {
+    height: 40vh;
+    width: 100%;
+    background-position: left;
+    border: 10px solid #FDD400;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #banner {
+    height: 60vh;
+    width: 80%;
+    background-position: center;
+    border: 15px solid #FDD400;
+  }
+}
+
 .section-1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -179,13 +208,13 @@ input[type=checkbox] {
           justify-content: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 960px) {
   .section-2 {
     display: -ms-grid;
     display: grid;
     padding: 10px;
-    -ms-grid-columns: 0.5fr 1fr;
-        grid-template-columns: 0.5fr 1fr;
+    -ms-grid-columns: 0.7fr 1fr;
+        grid-template-columns: 0.7fr 1fr;
     grid-gap: 1em;
   }
   .section-2 #pvz-main img {
@@ -196,7 +225,7 @@ input[type=checkbox] {
     width: 70%;
   }
   .section-2 .info h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     text-align: left;
   }
   .section-2 .info p {
@@ -204,7 +233,7 @@ input[type=checkbox] {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 959px) {
   .section-2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -225,6 +254,9 @@ input[type=checkbox] {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .section-2 #pvz-main img {
+    height: 200px;
+  }
   .section-2 .info {
     padding: 20px;
   }
@@ -233,29 +265,6 @@ input[type=checkbox] {
   }
   .section-2 .info p {
     text-align: center;
-  }
-}
-
-#banner {
-  background-image: url("../images/mainpage.png");
-  background-size: cover;
-  border-radius: 20px;
-  border: 20px solid #FDD400;
-}
-
-@media screen and (max-width: 767px) {
-  #banner {
-    height: 30vh;
-    width: 100%;
-    background-position: left;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  #banner {
-    height: 60vh;
-    width: 80%;
-    background-position: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
