@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
 body {
+  overflow-x: hidden;
   background-color: #9A4D00;
   margin: 0;
 }
@@ -21,9 +22,9 @@ body {
   color: white;
 }
 
-h1 {
-  font-size: 2em;
-  text-align: left;
+h1 h2 h3 h4 h5 {
+  font-family: "Brianne's Hand";
+  color: white;
 }
 
 p {
@@ -265,6 +266,98 @@ input[type=checkbox] {
   }
   .section-2 .info p {
     text-align: center;
+  }
+}
+
+.section-description {
+  margin-top: 100px;
+}
+
+.section-description h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.section-description i {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.section-description p {
+  margin-bottom: 20px;
+}
+
+.section-description .span-see {
+  color: white;
+  font-family: Lato, sans-serif;
+}
+
+.section-description .image-dp img {
+  border-radius: 45px;
+}
+
+.section-description .text-right {
+  text-align: right;
+}
+
+@media screen and (min-width: 960px) {
+  .section-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section-description .description {
+    width: 40%;
+  }
+  .section-description .description .span-see {
+    font-size: 1.3em;
+  }
+  .section-description .image-dp img {
+    border: 10px solid #FDD400;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .section-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .section-description .description {
+    text-align: center;
+  }
+  .section-description .description.order-1 {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .section-description .image-dp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-description .image-dp img {
+    margin-top: 20px;
+    border: 5px solid #FDD400;
+    width: 90%;
   }
 }
 /*# sourceMappingURL=style.css.map */

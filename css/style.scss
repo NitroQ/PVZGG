@@ -9,6 +9,7 @@ $text-highlight: #FBE574;
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 //body
 body{
+    overflow-x: hidden;
     background-color: $body;
     margin: 0;
 }
@@ -27,10 +28,9 @@ box-sizing: border-box;
     font-family: "Brianne's Hand";
     color: white;
 }
-h1{
-    font-size: 2em;
-    text-align: left;
-    
+h1 h2 h3 h4 h5{
+    font-family: "Brianne's Hand";
+    color: white;
 }
 p{
     font-family: 'Lato', sans-serif;
@@ -203,7 +203,7 @@ input[type=checkbox]{
     .info{
         padding-top: 30px;
         width: 70%; 
-        h1{
+        h1{ 
             font-size: 2.5em;
             text-align: left;
         }
@@ -234,6 +234,78 @@ input[type=checkbox]{
     }
 }
 }
+
+.section-description{
+    h1{
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+    i{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    p{
+        margin-bottom: 20px;
+    }
+    .span-see{
+        color: white;
+        font-family: Lato, sans-serif;
+    }
+    .image-dp{
+        img{
+            border-radius: 45px;    
+        }
+    }   
+    .text-right{
+        text-align: right;
+    }
+    margin-top: 100px;
+    @media screen and (min-width: 960px) {
+        &{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            .description{
+                width: 40%;
+                .span-see{
+                    font-size: 1.3em;
+                }
+            }
+            .image-dp{
+                img{
+                    border: 10px solid $accent;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 959px) {
+        &{  
+            display:flex;
+            justify-content: center;
+            flex-direction: column;
+            padding-left: 10px;
+            padding-right: 10px;
+            
+            .description{
+                text-align: center;
+               &.order-1{
+                    order: -1;
+                }
+            }
+        }
+        .image-dp{
+            display:flex;
+            justify-content: center;
+            img{
+                margin-top: 20px;
+                border: 5px solid $accent;
+                width: 90%;
+            }
+        }
+     
+    }
+}
+        
 
 
 
