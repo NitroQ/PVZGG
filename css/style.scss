@@ -1,0 +1,230 @@
+$body : #9A4D00;
+$body-secondary: #5D2710;
+$accent: #FDD400;
+$accent-secondary: #3E7F29;
+$text-primary: #FFFFFF;
+$text-secondary: #000000;
+$text-highlight: #FBE574;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+//body
+body{
+    background-color: $body;
+    margin: 0;
+}
+
+@font-face {
+    src: url(./css/Brianne_s_hand.ttf);
+    font-family: "Brianne's Hand";
+  }
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.brianne{
+    font-family: "Brianne's Hand";
+    color: white;
+}
+h1{
+    font-size: 2em;
+    text-align: left;
+    
+}
+p{
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    font-size: 1.5em;
+    color: white;
+}
+// Nav Bar
+a {
+text-decoration: none;
+}
+nav{
+    position: fixed;
+    width: 100%;
+} 
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: $accent;
+    color: $text-secondary;
+    
+   }
+   li {
+    list-style: none;
+    font-family: "Brianne's Hand";
+   }
+   .nav-links a {
+    color: $text-secondary;
+   }
+
+ .img-logo{
+     max-height: 50px;
+ }
+
+   .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 30px;
+    li:hover {
+        background-color: $text-highlight;
+        border-radius: 5px;
+        transition: 0.3s ease;
+       }
+    li {
+    padding: 5px 14px;
+    }
+   }
+
+   .services {
+    position: relative; 
+   }
+   .dropdown {
+    background-color: $accent;
+    border: 1px solid $text-secondary;
+    padding: 1em 0;
+    position: absolute; 
+    display: none;
+    border-radius: 8px;
+    top: 45px;
+    li + li {
+        margin-top: 10px;
+       }
+    li {
+    width: 7em;
+    text-align: left;
+    }
+    li:hover {
+        background-color: $text-highlight;
+        color: $text-primary;
+       }
+   }
+   .services:hover .dropdown {
+    display: block;
+   }
+
+
+input[type=checkbox]{
+    display: none;
+   } 
+   .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+   }
+   @media (max-width: 768px) {
+   .menu { 
+    display:none;
+    position: absolute;
+    background-color: $accent;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+    li:hover {
+        display: inline-block;
+        background-color:$text-highlight;
+        transition: 0.3s ease;
+       }
+    li + li {
+    margin-top: 12px;
+        }
+
+   }
+   input[type=checkbox]:checked ~ .menu{
+    display: block;
+   }
+   .hamburger {
+    display: block;
+   }
+   .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(30%);
+    li:hover {
+        background-color: $text-highlight;
+       }
+   }
+   }
+
+// nav bar end
+
+//banner
+.section-1{
+    display: flex;
+    justify-content: center;
+}
+.section-2{
+@media screen and (min-width: 768px) {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 0.5fr 1fr;
+    grid-gap: 1em;
+    #pvz-main{
+        img{
+            float: right;
+        }
+    }
+    .info{
+        padding-top: 30px;
+        width: 70%;
+        h1{
+            font-size: 3em;
+            text-align: left;
+        }
+        p{
+            padding-top: 10px;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    #pvz-main{
+        display: flex;
+        justify-content: center;
+    }
+    .info{
+        padding: 20px;
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+    }
+}
+}
+
+#banner{
+    background-image: url('../images/mainpage.png');
+    background-size: cover;
+    border-radius: 20px;
+    border: 20px solid $accent;
+
+    @media screen and (max-width: 767px) {
+        &{
+            height: 30vh;
+            width: 100%;
+            background-position: left;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        &{
+            height: 60vh;
+            width: 80%;
+            background-position: center;
+        }
+    }
+}
+
+
+    
+
+
