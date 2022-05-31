@@ -1,7 +1,6 @@
-$body : #9A4D00;
-$body-secondary: #5D2710;
+$body : #185D10;
 $accent: #FDD400;
-$accent-secondary: #3E7F29;
+$accent-secondary: #752E10;
 $text-primary: #FFFFFF;
 $text-secondary: #000000;
 $text-highlight: #FBE574;
@@ -28,20 +27,28 @@ box-sizing: border-box;
     font-family: "Brianne's Hand";
     color: white;
 }
-h1 h2 h3 h4 h5{
+h1{
     font-family: "Brianne's Hand";
     color: white;
 }
-p{
+div.description h3{
     font-family: 'Lato', sans-serif;
     font-weight: normal;
     color: white;
-   @media screen and (min-width: 768px) {
-        font-size: 1.3em;
-    }
-       
 }
 
+.button {
+    background-color: $accent;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 15px 25px;
+  }
 
 // Nav Bar
 a {
@@ -248,7 +255,7 @@ input[type=checkbox]{
         margin-bottom: 20px;
     }
     .span-see{
-        color: white;
+        margin-top: 10px;
         font-family: Lato, sans-serif;
     }
     .image-dp{
