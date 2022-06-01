@@ -1,0 +1,152 @@
+@import "./variables";
+//banner
+#banner{
+    background-image: url('../images/mainpage.png');
+    background-size: cover;
+    border-radius: 40px;
+
+    @media screen and (max-width: 767px) {
+        &{
+            height: 40vh;
+            width: 100%;
+            background-position: left;
+            border: 10px solid $accent;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        &{
+            height: 60vh;
+            width: 80%;
+            background-position: center;
+            border: 15px solid $accent;
+
+        }
+    }
+}
+
+//section
+.section-1{
+    display: flex;
+    justify-content: center;
+}
+.section-2{
+@media screen and (min-width: 960px) {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+ 
+    #pvz-main{
+        img{
+            float: right;
+        }
+    }
+    .info{
+        padding-top: 30px;
+        width: 40%; 
+        h1{ 
+            font-size: 2.5em;
+            text-align: left;
+        }
+        p{
+            padding-top: 10px;
+        }
+    }
+}
+@media screen and (max-width: 959px) {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    #pvz-main{
+        display: flex;
+        justify-content: center;
+        img{
+            height: 200px;
+        }
+    }
+    .info{
+        padding: 20px;
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+    }
+}
+}
+
+.section-description{
+
+    display:flex;
+    justify-content: center;
+    margin-top: 100px;
+
+    h1{
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+    i{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    p{
+        margin-bottom: 20px;
+    }
+    .span-see{
+        margin-top: 10px;
+        font-family: Lato, sans-serif;
+    }
+    .image-dp{
+        img{
+            border-radius: 45px;    
+        }
+    }   
+    .text-right{
+        text-align: right;
+    }
+
+    @media screen and (min-width: 960px) {
+        &{
+            align-items: center;
+            .description{
+                width: 40%;
+                .span-see{
+                    font-size: 1.3em;
+                }
+            }
+            .image-dp{
+                img{
+                    border: 10px solid $accent;
+                    width: 90%;
+                    float:right;
+                }
+                img.order-1{
+                    float:left;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 959px) {
+        &{  
+            flex-direction: column;
+            padding-left: 10px;
+            padding-right: 10px;
+            .description{
+                text-align: center;
+               &.order-1{
+                    order: -1;
+                }
+            }
+        }
+        .image-dp{
+            display:flex;
+            justify-content: center;
+            img{
+                margin-top: 20px;
+                border: 5px solid $accent;
+                width: 90%;
+            }
+        }
+    }
+}
+        

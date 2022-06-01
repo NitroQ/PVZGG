@@ -11,6 +11,7 @@ body {
 }
 
 * {
+  font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -19,16 +20,17 @@ body {
 
 .brianne {
   font-family: "Brianne's Hand";
-  color: white;
 }
 
-h1 {
-  font-family: "Brianne's Hand";
-  color: white;
+.text-light {
+  color: #FFFFFF;
+}
+
+.text-dark {
+  color: #000000;
 }
 
 div.description h3 {
-  font-family: 'Lato', sans-serif;
   font-weight: normal;
   color: white;
 }
@@ -77,6 +79,7 @@ li {
 
 .nav-links a {
   color: #000000;
+  font-family: "Brianne's Hand";
 }
 
 .img-logo {
@@ -147,7 +150,7 @@ input[type=checkbox] {
           user-select: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .menu {
     display: none;
     position: absolute;
@@ -183,188 +186,91 @@ input[type=checkbox] {
   }
 }
 
-#banner {
-  background-image: url("../images/mainpage.png");
-  background-size: cover;
-  border-radius: 20px;
+footer {
+  margin-top: 10vh;
 }
 
-@media screen and (max-width: 767px) {
-  #banner {
-    height: 40vh;
-    width: 100%;
-    background-position: left;
-    border: 10px solid #FDD400;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  #banner {
-    height: 60vh;
-    width: 80%;
-    background-position: center;
-    border: 15px solid #FDD400;
-  }
-}
-
-.section-1 {
+footer .footer-links {
+  padding: 20px;
+  background-color: #FDD400;
+  color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-radius: 50px 50px 0 0;
 }
 
-@media screen and (min-width: 960px) {
-  .section-2 {
-    display: -ms-grid;
-    display: grid;
-    padding: 10px;
-    -ms-grid-columns: 0.7fr 1fr;
-        grid-template-columns: 0.7fr 1fr;
-    grid-gap: 1em;
-  }
-  .section-2 #pvz-main img {
-    float: right;
-  }
-  .section-2 .info {
-    padding-top: 30px;
-    width: 70%;
-  }
-  .section-2 .info h1 {
-    font-size: 2.5em;
-    text-align: left;
-  }
-  .section-2 .info p {
-    padding-top: 10px;
-  }
+footer .footer-links .logo {
+  width: 20%;
 }
 
-@media screen and (max-width: 959px) {
-  .section-2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .section-2 #pvz-main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .section-2 #pvz-main img {
-    height: 200px;
-  }
-  .section-2 .info {
-    padding: 20px;
-  }
-  .section-2 .info h1 {
-    text-align: center;
-  }
-  .section-2 .info p {
-    text-align: center;
-  }
+footer .footer-links .logo img {
+  height: 200px;
+  float: right;
 }
 
-.section-description {
-  margin-top: 100px;
+footer .footer-links .links {
+  width: 40%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding-top: 3vh;
 }
 
-.section-description h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
+footer .footer-links .links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.section-description i {
-  margin-left: 5px;
-  margin-right: 5px;
+footer .footer-links .links ul h2 {
+  font-weight: normal;
 }
 
-.section-description p {
-  margin-bottom: 20px;
+footer .footer-links .links .disclaimer {
+  padding-top: 2vh;
 }
 
-.section-description .span-see {
-  margin-top: 10px;
-  font-family: Lato, sans-serif;
+footer .footer-links .socials {
+  width: 20%;
+  padding-left: 30vh;
+  padding-top: 3vh;
 }
 
-.section-description .image-dp img {
-  border-radius: 45px;
+footer .footer-links .socials .footer-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.section-description .text-right {
-  text-align: right;
+footer .footer-links .socials .footer-icons h1 {
+  font-size: 3em;
+  padding-left: 10px;
+  color: #752E10;
 }
 
-@media screen and (min-width: 960px) {
-  .section-description {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .section-description .description {
-    width: 40%;
-  }
-  .section-description .description .span-see {
-    font-size: 1.3em;
-  }
-  .section-description .image-dp img {
-    border: 10px solid #FDD400;
-  }
+footer .footer-links .links-main {
+  padding-top: 10px;
 }
 
-@media screen and (max-width: 959px) {
-  .section-description {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .section-description .description {
-    text-align: center;
-  }
-  .section-description .description.order-1 {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
-  }
-  .section-description .image-dp {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .section-description .image-dp img {
-    margin-top: 20px;
-    border: 5px solid #FDD400;
-    width: 90%;
-  }
+footer .bottom {
+  padding: 20px;
+  background-color: #752E10;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */

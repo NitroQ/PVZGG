@@ -1,11 +1,9 @@
-$body : #185D10;
-$accent: #FDD400;
-$accent-secondary: #752E10;
-$text-primary: #FFFFFF;
-$text-secondary: #000000;
-$text-highlight: #FBE574;
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+@import "./variables";
+
+
 //body
 body{
     overflow-x: hidden;
@@ -19,20 +17,23 @@ body{
   }
 
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 .brianne{
     font-family: "Brianne's Hand";
-    color: white;
 }
-h1{
-    font-family: "Brianne's Hand";
-    color: white;
+
+.text-light{
+    color: $text-primary;
 }
+.text-dark{
+    color: $text-secondary;
+}
+
 div.description h3{
-    font-family: 'Lato', sans-serif;
     font-weight: normal;
     color: white;
 }
@@ -73,6 +74,8 @@ nav{
    }
    .nav-links a {
     color: $text-secondary;
+    font-family: "Brianne's Hand";
+
    }
 
  .img-logo{
@@ -129,7 +132,7 @@ input[type=checkbox]{
     font-size: 24px;
     user-select: none;
    }
-   @media (max-width: 768px) {
+   @media (max-width: 960px) {
    .menu { 
     display:none;
     position: absolute;
@@ -166,156 +169,63 @@ input[type=checkbox]{
 
 // nav bar end
 
-//banner
-#banner{
-    background-image: url('../images/mainpage.png');
-    background-size: cover;
-    border-radius: 20px;
-
-    @media screen and (max-width: 767px) {
-        &{
-            height: 40vh;
-            width: 100%;
-            background-position: left;
-            border: 10px solid $accent;
-        }
-    }
-    @media screen and (min-width: 768px) {
-        &{
-            height: 60vh;
-            width: 80%;
-            background-position: center;
-            border: 15px solid $accent;
-
-        }
-    }
-}
-
-//section
-.section-1{
-    display: flex;
-    justify-content: center;
-}
-.section-2{
-@media screen and (min-width: 960px) {
-    display: grid;
-    padding: 10px;
-    grid-template-columns: 0.7fr 1fr;
-    grid-gap: 1em;
-    #pvz-main{
-        img{
-            float: right;
-        }
-    }
-    .info{
-        padding-top: 30px;
-        width: 70%; 
-        h1{ 
-            font-size: 2.5em;
-            text-align: left;
-        }
-        p{
-            padding-top: 10px;
-        }
-    }
-}
-@media screen and (max-width: 959px) {
-    display:flex;
-    justify-content: center;
-    flex-direction: column;
-    #pvz-main{
-        display: flex;
-        justify-content: center;
-        img{
-            height: 200px;
-        }
-    }
-    .info{
-        padding: 20px;
-        h1{
-            text-align: center;
-        }
-        p{
-            text-align: center;
-        }
-    }
-}
-}
-
-.section-description{
-    h1{
-        font-size: 2.5em;
-        margin-bottom: 10px;
-    }
-    i{
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-    p{
-        margin-bottom: 20px;
-    }
-    .span-see{
-        margin-top: 10px;
-        font-family: Lato, sans-serif;
-    }
-    .image-dp{
-        img{
-            border-radius: 45px;    
-        }
-    }   
-    .text-right{
-        text-align: right;
-    }
-    margin-top: 100px;
-    @media screen and (min-width: 960px) {
-        &{
-            display:flex;
-            justify-content: center;
-            align-items: center;
-            .description{
-                width: 40%;
-                .span-see{
-                    font-size: 1.3em;
-                }
-            }
-            .image-dp{
-                img{
-                    border: 10px solid $accent;
-                }
-            }
-        }
-    }
-    @media screen and (max-width: 959px) {
-        &{  
-            display:flex;
-            justify-content: center;
-            flex-direction: column;
-            padding-left: 10px;
-            padding-right: 10px;
-            
-            .description{
-                text-align: center;
-               &.order-1{
-                    order: -1;
-                }
-            }
-        }
-        .image-dp{
-            display:flex;
-            justify-content: center;
-            img{
-                margin-top: 20px;
-                border: 5px solid $accent;
-                width: 90%;
-            }
-        }
-     
-    }
-}
-        
-
-
-
     
 
 
+//footer
+footer{
+    margin-top: 10vh;
+    .footer-links{
+        padding:20px;
+        background-color: $accent;
+        color: $text-secondary;
+        display: flex;
+        flex-direction: row;
+        border-radius: 50px 50px 0 0;
+        .logo{
+            width: 20%;
+            img{
+                height: 200px;
+                float: right;
+            }
+        }
+        .links{
+            width: 40%;
+            height: max-content;
+            padding-top: 3vh;
+            ul{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                h2{
+                    font-weight: normal;
+                }
+            }
+            .disclaimer{
+                padding-top: 2vh;
+            }
+        }
+        .socials{
+            width: 20%;
+            padding-left: 30vh;
+            padding-top: 3vh;
+            .footer-icons{
+                display: flex;
+                flex-direction: row;
+                h1{
+                    font-size: 3em;
+                    padding-left: 10px;
+                    color: $accent-secondary;
+                }
+            }
+        }
+        .links-main{
+            padding-top: 10px;
+        }
+    }
+    .bottom{
+        padding:20px;
+        background-color: $accent-secondary;
+        color: $text-primary;
+    }
+}
