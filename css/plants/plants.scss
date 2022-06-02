@@ -1,9 +1,9 @@
-@import "./variables";
+@import "../variables";
 
 //banner
 
 #banner{
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5)),url('../images/plants-banner.png');
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5)),url('../../images/plants-banner.png');
     background-size: cover;
     border-radius: 40px;
     display: flex;
