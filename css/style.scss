@@ -50,6 +50,12 @@ body{
 .text-dark{
     color: $text-secondary;
 }
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
 
 div.description h3{
     font-weight: normal;
@@ -162,7 +168,71 @@ input[type=checkbox]{
 
 // nav bar end
 
-    
+.section-description{
+
+    display:flex;
+    justify-content: center;
+    margin-top: 100px;
+
+    h1{
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+    p{
+        margin-bottom: 20px;
+    }
+    .span-see{
+        margin-top: 10px;
+        font-family: 'Lato', sans-serif;
+    }
+    .image-dp{
+        img{
+            border-radius: 45px;    
+        }
+    }   
+
+    @media screen and (min-width: 960px) {
+        &{
+            .description{
+                width: 40%;
+                .span-see{
+                    font-size: 1.3em;
+                }
+            }
+            .image-dp{
+                img{
+                    border: 10px solid $accent;
+                    width: 90%;
+                    float:right;
+                }
+                img.order-1{
+                    float:left;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 959px) {
+        &{  
+            flex-direction: column;
+            .description{
+                text-align: center;
+               &.order-1{
+                    order: -1;
+                }
+            }
+        }
+        .image-dp{
+            display:flex;
+            justify-content: center;
+            img{
+                margin-top: 20px;
+                border: 5px solid $accent;
+                width: 90%;
+            }
+        }
+    }
+}
+        
 
 
 //footer

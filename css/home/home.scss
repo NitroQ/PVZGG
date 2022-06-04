@@ -79,13 +79,20 @@ div.section-page{
     padding-top: 8vh;
     height: 50vh;
     background-image: url('../../images/background.png');
-    background-size:contain;
-
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    
      .category{
          display:flex;
          width: 100% !important;
          flex-direction: row;
          justify-content: center;
+         align-items: center;
      }
     .card-category{
         margin-top: 20px;
@@ -110,75 +117,15 @@ div.section-page{
  }
 
 .section-description{
-
-    display:flex;
-    justify-content: center;
-    margin-top: 100px;
-
-    h1{
-        font-size: 2.5em;
-        margin-bottom: 10px;
-    }
     i{
         margin-left: 5px;
         margin-right: 5px;
     }
-    p{
-        margin-bottom: 20px;
-    }
-    .span-see{
-        margin-top: 10px;
-        font-family: Lato, sans-serif;
-    }
-    .image-dp{
-        img{
-            border-radius: 45px;    
-        }
-    }   
-    .text-right{
-        text-align: right;
-    }
-
     @media screen and (min-width: 960px) {
         &{
             align-items: center;
-            .description{
-                width: 40%;
-                .span-see{
-                    font-size: 1.3em;
-                }
-            }
-            .image-dp{
-                img{
-                    border: 10px solid $accent;
-                    width: 90%;
-                    float:right;
-                }
-                img.order-1{
-                    float:left;
-                }
-            }
         }
     }
-    @media screen and (max-width: 959px) {
-        &{  
-            flex-direction: column;
-            .description{
-                text-align: center;
-               &.order-1{
-                    order: -1;
-                }
-            }
-        }
-        .image-dp{
-            display:flex;
-            justify-content: center;
-            img{
-                margin-top: 20px;
-                border: 5px solid $accent;
-                width: 90%;
-            }
-        }
-    }
+
 }
         

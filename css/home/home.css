@@ -97,6 +97,19 @@ div.section-page {
   height: 50vh;
   background-image: url("../../images/background.png");
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 div.section-page .category {
@@ -111,6 +124,9 @@ div.section-page .category {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 div.section-page .card-category {
@@ -139,41 +155,9 @@ div.section-page .card-category h2 {
   font-weight: normal;
 }
 
-.section-description {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 100px;
-}
-
-.section-description h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
 .section-description i {
   margin-left: 5px;
   margin-right: 5px;
-}
-
-.section-description p {
-  margin-bottom: 20px;
-}
-
-.section-description .span-see {
-  margin-top: 10px;
-  font-family: Lato, sans-serif;
-}
-
-.section-description .image-dp img {
-  border-radius: 45px;
-}
-
-.section-description .text-right {
-  text-align: right;
 }
 
 @media screen and (min-width: 960px) {
@@ -181,50 +165,6 @@ div.section-page .card-category h2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .section-description .description {
-    width: 40%;
-  }
-  .section-description .description .span-see {
-    font-size: 1.3em;
-  }
-  .section-description .image-dp img {
-    border: 10px solid #FDD400;
-    width: 90%;
-    float: right;
-  }
-  .section-description .image-dp img.order-1 {
-    float: left;
-  }
-}
-
-@media screen and (max-width: 959px) {
-  .section-description {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .section-description .description {
-    text-align: center;
-  }
-  .section-description .description.order-1 {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
-  }
-  .section-description .image-dp {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .section-description .image-dp img {
-    margin-top: 20px;
-    border: 5px solid #FDD400;
-    width: 90%;
   }
 }
 /*# sourceMappingURL=home.css.map */
