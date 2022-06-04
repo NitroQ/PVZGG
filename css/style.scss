@@ -6,7 +6,6 @@
 
 //body
 body{
-    overflow-x: hidden;
     background-color: $body;
     margin: 0;
 }
@@ -25,7 +24,26 @@ body{
 .brianne{
     font-family: "Brianne's Hand";
 }
-
+.container{
+    @media screen and (max-width:768px) {
+        &{
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+     }
+    @media screen and (max-width:991px) {
+        &{
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+     }
+    @media screen and (min-width:992px) {
+        &{
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+     }
+}
 .text-light{
     color: $text-primary;
 }
@@ -63,26 +81,28 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px;
+    padding: 8px;
     background-color: $accent;
     color: $text-secondary;
-    
+    li {
+        list-style: none;
+        font-family: "Brianne's Hand";
+       }
    }
-   li {
-    list-style: none;
-    font-family: "Brianne's Hand";
-   }
+  
    .nav-links a {
     color: $text-secondary;
     font-family: "Brianne's Hand";
 
    }
 
- .img-logo{
-     max-height: 50px;
- }
+.logo{
+    .img-logo{
+        max-height: 50px;
+    }
+}
 
-   .menu {
+.menu {
     display: flex;
     gap: 1em;
     font-size: 1.5em;
@@ -96,33 +116,6 @@ nav{
     }
    }
 
-   .services {
-    position: relative; 
-   }
-   .dropdown {
-    background-color: $accent;
-    border: 1px solid $text-secondary;
-    padding: 1em 0;
-    position: absolute; 
-    display: none;
-    border-radius: 8px;
-    top: 45px;
-    li + li {
-        margin-top: 10px;
-       }
-    li {
-    width: 7em;
-    text-align: left;
-    }
-    li:hover {
-        background-color: $text-highlight;
-        color: $text-primary;
-       }
-   }
-   .services:hover .dropdown {
-    display: block;
-   }
-
 
 input[type=checkbox]{
     display: none;
@@ -132,7 +125,7 @@ input[type=checkbox]{
     font-size: 24px;
     user-select: none;
    }
-   @media (max-width: 960px) {
+   @media (max-width: 992px) {
    .menu { 
     display:none;
     position: absolute;
@@ -180,38 +173,115 @@ footer{
         background-color: $accent;
         color: $text-secondary;
         display: flex;
-        flex-direction: row;
         border-radius: 50px 50px 0 0;
+
+        @media screen and (min-width:992px) {
+            &{
+                flex-direction: row;
+            }
+        }
+        @media screen and (max-width:991px) {
+            &{
+                flex-direction: column;
+            }
+        }
         .logo{
-            width: 20%;
+            @media screen and (min-width:992px) {
+                &{
+                    width: 20%;
+                }
+            }
+            @media screen and (max-width:991px) {
+                &{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+
             img{
                 height: 200px;
-                float: right;
+                @media screen and (min-width:992px) {
+                    &{
+                        float: right;
+                    }
+                }
+    
             }
         }
         .links{
-            width: 40%;
+            @media screen and (min-width:992px) {
+                &{
+                    width: 40%;
+                }
+            }
+            @media screen and (max-width:991px) {
+                &{
+                    text-align: center;
+                    width: 100%;
+                }
+            }
+
             height: max-content;
             padding-top: 3vh;
             ul{
                 display: flex;
-                justify-content: space-between;
-                flex-direction: row;
+                @media screen and (min-width:992px) {
+                    &{
+                        justify-content: space-between;
+                        flex-direction: row;
+                    }
+                }
+                @media screen and (max-width:991px) {
+                    &{
+                        flex-flow:column;
+                        gap:10px;
+
+                    }
+                }
+
+                list-style-type: none;
                 h2{
                     font-weight: normal;
                 }
             }
             .disclaimer{
                 padding-top: 2vh;
+
+                @media screen and (max-width:991px) {
+                    &{
+                        text-align: center;
+                        h3{
+                            padding-bottom: 5px;
+                        }
+                    }
+                }
             }
         }
         .socials{
-            width: 20%;
-            padding-left: 30vh;
+            
             padding-top: 3vh;
+            @media screen and (min-width:992px) {
+                &{
+                    padding-left: 30vh;
+                    width: 20%;
+                }
+            }
+            @media screen and (max-width:991px) {
+                &{    
+                    text-align: center;
+                    width: 100%;
+                }
+            }
+           
             .footer-icons{
                 display: flex;
                 flex-direction: row;
+                @media screen and (max-width:991px) {
+                    &{    
+                        justify-content: center;
+                    }
+                }
                 h1{
                     font-size: 3em;
                     padding-left: 10px;
@@ -224,6 +294,11 @@ footer{
         }
     }
     .bottom{
+        @media screen and (max-width:991px) {
+            &{
+                text-align: center;
+            }
+        }
         padding:20px;
         background-color: $accent-secondary;
         color: $text-primary;

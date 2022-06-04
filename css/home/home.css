@@ -95,7 +95,7 @@
 div.section-page {
   padding-top: 8vh;
   height: 50vh;
-  background-image: url("../images/background.png");
+  background-image: url("../../images/background.png");
   background-size: contain;
 }
 
@@ -204,8 +204,6 @@ div.section-page .card-category h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-left: 10px;
-    padding-right: 10px;
   }
   .section-description .description {
     text-align: center;
