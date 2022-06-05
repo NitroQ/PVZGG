@@ -1,7 +1,7 @@
 @import "../variables";
 //banner
 #banner{
-    background-image: url('../../images/mainpage.png');
+    background-image: url('../../images/banner/index.png');
     background-size: cover;
     border-radius: 40px;
 
@@ -26,51 +26,6 @@
 
 //section
 
-.section-2{
-    @media screen and (min-width: 960px) {
-        display: flex;
-        padding: 10px;
-        justify-content: center;
-    
-        #pvz-main{
-            img{
-                float: right;
-            }
-        }
-        .info{
-            padding-top: 30px;
-            width: 40%; 
-            h1{ 
-                font-size: 2.5em;
-                text-align: left;
-            }
-            p{
-                padding-top: 10px;
-            }
-        }
-    }
-    @media screen and (max-width: 959px) {
-        display:flex;
-        justify-content: center;
-        flex-direction: column;
-        #pvz-main{
-            display: flex;
-            justify-content: center;
-            img{
-                height: 200px;
-            }
-        }
-        .info{
-            padding: 20px;
-            h1{
-                text-align: center;
-            }
-            p{
-                text-align: center;
-            }
-        }
-    }
-}
 
 div.section-page{
     padding-top: 8vh;

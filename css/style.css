@@ -272,6 +272,67 @@ input[type=checkbox] {
           justify-content: center;
 }
 
+@media screen and (min-width: 960px) {
+  .section-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-2 #pvz-main img {
+    float: right;
+  }
+  .section-2 .info {
+    padding-top: 30px;
+    width: 40%;
+  }
+  .section-2 .info h1 {
+    font-size: 2.5em;
+    text-align: left;
+  }
+  .section-2 .info p {
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .section-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-2 #pvz-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-2 #pvz-main img {
+    height: 200px;
+  }
+  .section-2 .info {
+    padding: 20px;
+  }
+  .section-2 .info h1 {
+    text-align: center;
+  }
+  .section-2 .info p {
+    text-align: center;
+  }
+}
+
 footer {
   margin-top: 10vh;
 }
