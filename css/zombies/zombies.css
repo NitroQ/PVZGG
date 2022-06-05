@@ -5,6 +5,10 @@
   display: flex;
 }
 
+.container a {
+  color: white;
+}
+
 @media screen and (max-width: 991px) {
   .container {
     -webkit-box-orient: vertical;
@@ -151,11 +155,11 @@ h1.large {
 
 .half-description h1 {
   font-weight: normal;
+  padding-bottom: 10px;
 }
 
-.half-description h1 {
-  font-weight: normal;
-  padding-bottom: 10px;
+.half-description p {
+  line-height: 1.5;
 }
 
 .half-description ul {

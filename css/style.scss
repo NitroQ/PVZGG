@@ -23,6 +23,7 @@ body{
 }
 .brianne{
     font-family: "Brianne's Hand";
+    font-weight: normal;
 }
 .container{
     @media screen and (max-width:768px) {
@@ -173,13 +174,16 @@ input[type=checkbox]{
     display:flex;
     justify-content: center;
     margin-top: 100px;
-
+    color: white;
     h1{
         font-size: 2.5em;
         margin-bottom: 10px;
     }
     p{
         margin-bottom: 20px;
+    }
+    ul{
+        list-style-type: disc;
     }
     .span-see{
         margin-top: 10px;
@@ -232,7 +236,11 @@ input[type=checkbox]{
         }
     }
 }
-        
+
+.section-1{
+    display: flex;
+    justify-content: center;
+}
 
 
 //footer
