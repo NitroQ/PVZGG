@@ -1,0 +1,113 @@
+#banner {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5))), url("../../images/banner/achievements.png");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5)), url("../../images/banner/achievements.png");
+  background-size: cover;
+  border-radius: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+#banner h1 {
+  font-weight: normal;
+}
+
+@media screen and (max-width: 767px) {
+  #banner {
+    height: 30vh;
+    width: 100%;
+    background-position: left;
+    border: 10px solid #FDD400;
+  }
+  #banner h1 {
+    font-size: 3em;
+    padding: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #banner {
+    height: 35vh;
+    width: 80%;
+    background-position: center;
+    border: 15px solid #FDD400;
+  }
+  #banner h1 {
+    font-size: 4em;
+    padding: 40px;
+  }
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    margin-top: 4vh;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.achievement {
+  padding-left: 5%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (min-width: 991px) {
+  .achievement {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .achievement {
+    margin-top: 15px;
+    width: 100%;
+  }
+}
+
+.achievement .ach-img {
+  width: 115px;
+  height: 115px;
+}
+
+.achievement .ach-description {
+  padding-left: 10px;
+}
+
+.achievement .ach-description h3 {
+  margin-top: 10px;
+  width: 90%;
+}
+/*# sourceMappingURL=achievements.css.map */

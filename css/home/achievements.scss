@@ -1,0 +1,83 @@
+@import "../variables";
+
+#banner{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5)),url('../../images/banner/achievements.png');
+    background-size: cover;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column-reverse;
+
+   h1{
+        font-weight: normal;
+   }
+    @media screen and (max-width: 767px) {
+        &{
+            height: 30vh;
+            width: 100%;
+            background-position: left;
+            border: 10px solid $accent;
+            h1{
+                font-size: 3em;
+                padding: 40px;
+            }
+        }
+    }
+    @media screen and (min-width: 768px) {
+        &{
+            height: 35vh;
+            width: 80%;
+            background-position: center;
+            border: 15px solid $accent;
+            h1{
+                font-size: 4em;
+                padding: 40px;
+            }
+        }
+    }
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 992px) {
+        &{
+            margin-top: 4vh;
+        }
+    }
+    @media screen and (max-width: 991px) {
+        &{
+           flex-direction: column;
+        }
+    }
+}
+
+.achievement{
+    padding-left: 5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    @media screen and (min-width: 991px) {
+        &{
+            width: 40%;
+        }
+    }
+    @media screen and (max-width: 991px) {
+        &{
+            margin-top: 15px;
+            width: 100%;
+        }
+    }
+    .ach-img{
+        width:115px;
+        height:115px;
+    }
+    .ach-description{
+        padding-left: 10px;
+        h3{
+            margin-top: 10px;
+            width:90%;
+        }
+    }
+}

@@ -297,7 +297,6 @@ footer{
         color: $text-secondary;
         display: flex;
         border-radius: 50px 50px 0 0;
-
         @media screen and (min-width:992px) {
             &{
                 flex-direction: row;
@@ -366,6 +365,7 @@ footer{
                 list-style-type: none;
                 h2{
                     font-weight: normal;
+                    color: black;
                 }
             }
             .disclaimer{
