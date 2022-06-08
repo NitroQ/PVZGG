@@ -50,6 +50,12 @@ div.categories h1.next {
   margin-top: 50px;
 }
 
+@media screen and (max-width: 768px) {
+  div.categories .brianne {
+    text-align: center;
+  }
+}
+
 div.categories .plants {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,6 +67,15 @@ div.categories .plants {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  div.categories .plants {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
 }
 
 div.categories .card-plants {
@@ -88,5 +103,32 @@ div.categories .card-plants img {
 div.categories .card-plants h2 {
   color: white;
   font-weight: normal;
+}
+
+@media screen and (min-width: 960px) {
+  div.categories .card-plants {
+    width: 230px;
+    height: 220px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  div.categories .card-plants {
+    width: 200px;
+    height: 200px;
+  }
+  div.categories .card-plants h2 {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  div.categories .card-plants {
+    width: 150px;
+    height: 150px;
+  }
+  div.categories .card-plants h2 {
+    font-size: 1em;
+  }
 }
 /*# sourceMappingURL=plants-cat.css.map */

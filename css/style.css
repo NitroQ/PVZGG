@@ -29,14 +29,14 @@ body {
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 959px) {
   .container {
     padding-left: 3%;
     padding-right: 3%;
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 960px) {
   .container {
     padding-left: 10%;
     padding-right: 10%;

@@ -43,11 +43,25 @@ div.categories{
    h1.next{
        margin-top: 50px;
    }
+   @media screen and (max-width:768px) {
+    &{
+        .brianne{
+            text-align: center;
+        }
+    }
+    }
     .plants{
         display:flex;
-        width: 100% !important;
+        width: 100% !important; 
         flex-direction: row;
         flex-wrap: wrap;
+
+        @media screen and (max-width:768px) {
+            &{
+                justify-content: center;
+                text-align: center;
+            }
+        }
     }
    .card-plants{
        margin-top: 20px;
@@ -68,5 +82,30 @@ div.categories{
            color: white;
            font-weight: normal;
        }
+
+       @media screen and (min-width:960px) {
+        &{
+            width: 230px;
+            height: 220px;
+        }
+    }
+       @media screen and (max-width:768px) {
+        &{
+            width: 200px;
+            height: 200px;
+            h2{
+                font-size: 1.2em;
+            }
+        }
+    }
+        @media screen and (max-width:576px) {
+            &{
+                width: 150px;
+                height: 150px;
+                h2{
+                    font-size: 1em;
+                }
+            }
+        }
    }
 }
