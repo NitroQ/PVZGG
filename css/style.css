@@ -5,8 +5,8 @@ body {
 }
 
 @font-face {
-  src: url('./Brianne_s_hand.ttf') format("truetype"), url('./Brianne_s_hand.woff') format("woff");
-  font-family: "Brianne's hand", 'Brianne_s_hand';
+  font-family: "Brianne's hand Regular", "Brianne's hand", sans-serif;
+  src: url("Brianne_s_hand.ttf") format("truetype"), url("Brianne_s_hand.woff") format("woff");
 }
 
 * {
@@ -18,7 +18,7 @@ body {
 }
 
 .brianne {
-  font-family: "Brianne's hand", 'Brianne_s_hand';
+  font-family: "Brianne's hand Regular", "Brianne's hand", sans-serif;
   font-weight: normal;
 }
 
