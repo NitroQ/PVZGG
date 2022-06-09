@@ -12,7 +12,7 @@ body{
 
 @font-face {
     src: url(./Brianne_s_hand.ttf) format('truetype');
-    font-family: "Brianne's Hand";
+    font-family: "Brianne's Hand", 'Brianne_s_hand';
   }
 
 * {
@@ -22,7 +22,7 @@ body{
     box-sizing: border-box;
 }
 .brianne{
-    font-family: "Brianne's Hand";
+    font-family: "Brianne's Hand", 'Brianne_s_hand';
     font-weight: normal;
 }
 .container{
