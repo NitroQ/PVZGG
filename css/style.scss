@@ -3,6 +3,7 @@
 
 @import "./variables";
 
+$font-family: "Brianne's hand Regular", "Brianne's hand", "Brianne's Hand", "Brianne_s_hand", sans-serif;
 
 //body
 body{
@@ -11,8 +12,8 @@ body{
 }
 
 @font-face {
-    font-family: "Brianne's hand Regular", "Brianne's hand", sans-serif;
-    src: url('Brianne_s_hand.ttf') format('truetype'), url('Brianne_s_hand.woff') format('woff');
+    font-family: $font-family;
+    src: url("./Brianne_s_hand.ttf") format("truetype"), url("./Brianne_s_hand.woff") format("woff");
   }
 
 * {
@@ -22,7 +23,7 @@ body{
     box-sizing: border-box;
 }
 .brianne{
-    font-family: "Brianne's hand Regular", "Brianne's hand", sans-serif;
+    font-family: $font-family;
     font-weight: normal;
 }
 .container{
@@ -93,13 +94,13 @@ nav{
     color: $text-secondary;
     li {
         list-style: none;
-        font-family: "Brianne's Hand";
+        font-family: $font-family;
        }
    }
   
    .nav-links a {
     color: $text-secondary;
-    font-family: "Brianne's Hand";
+    font-family: $font-family;
 
    }
 

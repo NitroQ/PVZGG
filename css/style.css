@@ -5,8 +5,8 @@ body {
 }
 
 @font-face {
-  font-family: "Brianne's hand Regular", "Brianne's hand", sans-serif;
-  src: url("Brianne_s_hand.ttf") format("truetype"), url("Brianne_s_hand.woff") format("woff");
+  font-family: "Brianne's hand Regular", "Brianne's hand", "Brianne's Hand", "Brianne_s_hand", sans-serif;
+  src: url("./Brianne_s_hand.ttf") format("truetype"), url("./Brianne_s_hand.woff") format("woff");
 }
 
 * {
@@ -18,7 +18,7 @@ body {
 }
 
 .brianne {
-  font-family: "Brianne's hand Regular", "Brianne's hand", sans-serif;
+  font-family: "Brianne's hand Regular", "Brianne's hand", "Brianne's Hand", "Brianne_s_hand", sans-serif;
   font-weight: normal;
 }
 
@@ -103,12 +103,12 @@ nav {
 
 .navbar li {
   list-style: none;
-  font-family: "Brianne's Hand";
+  font-family: "Brianne's hand Regular", "Brianne's hand", "Brianne's Hand", "Brianne_s_hand", sans-serif;
 }
 
 .nav-links a {
   color: #000000;
-  font-family: "Brianne's Hand";
+  font-family: "Brianne's hand Regular", "Brianne's hand", "Brianne's Hand", "Brianne_s_hand", sans-serif;
 }
 
 .logo .img-logo {
