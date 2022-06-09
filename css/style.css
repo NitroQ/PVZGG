@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+@import url("db.onlinewebfonts.com/c/d1f1fb1fc64a8b1e61ca204d3ec1e6a2?family=Brianne's+hand");
 body {
   background-color: #185D10;
   margin: 0;
 }
 
 @font-face {
-  font-family: "Brianne's hand Regular", "Brianne's hand", "Brianne's Hand", "Brianne_s_hand", sans-serif;
-  src: url("./Brianne_s_hand.ttf") format("truetype"), url("./Brianne_s_hand.woff") format("woff");
+  font-family: "Brianne's hand";
+  src: url("//db.onlinewebfonts.com/t/d1f1fb1fc64a8b1e61ca204d3ec1e6a2.eot");
+  src: url("//db.onlinewebfonts.com/t/d1f1fb1fc64a8b1e61ca204d3ec1e6a2.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/d1f1fb1fc64a8b1e61ca204d3ec1e6a2.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/d1f1fb1fc64a8b1e61ca204d3ec1e6a2.woff") format("woff"), url("//db.onlinewebfonts.com/t/d1f1fb1fc64a8b1e61ca204d3ec1e6a2.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/d1f1fb1fc64a8b1e61ca204d3ec1e6a2.svg#Brianne's hand") format("svg");
 }
 
 * {
@@ -18,7 +20,7 @@ body {
 }
 
 .brianne {
-  font-family: "Brianne's hand Regular", "Brianne's hand", "Brianne's Hand", "Brianne_s_hand", sans-serif;
+  font-family: "Brianne's hand";
   font-weight: normal;
 }
 
@@ -103,12 +105,12 @@ nav {
 
 .navbar li {
   list-style: none;
-  font-family: "Brianne's hand Regular", "Brianne's hand", "Brianne's Hand", "Brianne_s_hand", sans-serif;
+  font-family: "Brianne's hand";
 }
 
 .nav-links a {
   color: #000000;
-  font-family: "Brianne's hand Regular", "Brianne's hand", "Brianne's Hand", "Brianne_s_hand", sans-serif;
+  font-family: "Brianne's hand";
 }
 
 .logo .img-logo {
