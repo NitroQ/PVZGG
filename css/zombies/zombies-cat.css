@@ -50,6 +50,12 @@ div.categories h1.next {
   margin-top: 50px;
 }
 
+@media screen and (max-width: 768px) {
+  div.categories .brianne {
+    text-align: center;
+  }
+}
+
 div.categories .zombies {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,6 +69,15 @@ div.categories .zombies {
       flex-wrap: wrap;
 }
 
+@media screen and (max-width: 768px) {
+  div.categories .zombies {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
+
 div.categories .card-zombies {
   margin-top: 20px;
   margin-right: 15px;
@@ -74,8 +89,6 @@ div.categories .card-zombies {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  width: 235px;
-  height: 285px;
   background-color: #752E10;
   border: #FDD400 4px solid;
   border-radius: 20px;
@@ -90,5 +103,34 @@ div.categories .card-zombies h2 {
   color: white;
   font-weight: normal;
   word-break: normal;
+}
+
+@media screen and (min-width: 960px) {
+  div.categories .card-zombies {
+    width: 235px;
+    height: 285px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  div.categories .card-zombies {
+    width: 200px;
+    height: 230px;
+  }
+  div.categories .card-zombies h2 {
+    font-size: 1.2em;
+    width: 190px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  div.categories .card-zombies {
+    width: 150px;
+    height: 175px;
+  }
+  div.categories .card-zombies h2 {
+    font-size: 1em;
+    width: 145px;
+  }
 }
 /*# sourceMappingURL=zombies-cat.css.map */

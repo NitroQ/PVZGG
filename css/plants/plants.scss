@@ -46,17 +46,36 @@ h1.large{
 .card{
     margin-top: 5vh;
     padding: 2vh;
-    height: 700px;
     background-color: $accent-secondary;
     color: white;
     border: $accent 10px solid;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
+
+    @media screen and (min-width:992px) {
+        &{
+            height: 700px;
+        }
+    }
+    @media screen and (max-width:991px) {
+        &{
+            height: 600px;
+        }
+    }
     .card-top{
         display: flex;
         flex-direction: row;
-        height: 40%;
+        @media screen and (min-width:992px) {
+            &{
+                height: 40%;
+            }
+        }
+        @media screen and (max-width:991px) {
+            &{
+                height: 35%;
+            }
+        }
     }
     .card-bottom{
         height: 50%;

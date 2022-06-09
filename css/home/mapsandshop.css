@@ -1,0 +1,122 @@
+#banner {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5))), url("../../images/banner/shop.png");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5)), url("../../images/banner/shop.png");
+  background-size: cover;
+  border-radius: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+#banner h1 {
+  font-weight: normal;
+}
+
+@media screen and (max-width: 767px) {
+  #banner {
+    height: 30vh;
+    width: 100%;
+    background-position: left;
+    border: 10px solid #FDD400;
+  }
+  #banner h1 {
+    font-size: 3em;
+    padding: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #banner {
+    height: 35vh;
+    width: 80%;
+    background-position: center;
+    border: 15px solid #FDD400;
+  }
+  #banner h1 {
+    font-size: 4em;
+    padding: 40px;
+  }
+}
+
+.section-2 {
+  margin-top: 2vh;
+}
+
+.section-2 img {
+  margin-left: 10px;
+}
+
+.section-2 p {
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.section-description ul {
+  line-height: 2;
+}
+
+.section-description p {
+  line-height: 1.5;
+}
+
+.section-description .shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 35% !important;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-description .card-shop {
+  margin-top: 20px;
+  margin-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 230px;
+  height: 220px;
+  background-color: #752E10;
+  border: #FDD400 4px solid;
+  border-radius: 20px;
+}
+
+.section-description .card-shop img {
+  padding: 15px;
+}
+
+.section-description .card-shop h2 {
+  color: white;
+  font-weight: normal;
+}
+
+.maps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5vh;
+}
+
+.maps h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=mapsandshop.css.map */

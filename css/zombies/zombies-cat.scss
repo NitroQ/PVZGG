@@ -42,17 +42,27 @@
 
 div.categories{
    padding-top: 8vh;
-
-   
-
    h1.next{
        margin-top: 50px;
    }
+   @media screen and (max-width:768px) {
+    &{
+        .brianne{
+            text-align: center;
+        }
+    }
+    }
     .zombies{
         display:flex;
         width: 100% !important;
         flex-direction: row;
         flex-wrap: wrap;
+        @media screen and (max-width:768px) {
+            &{
+                justify-content: center;
+                text-align: center;
+            }
+        }
     }
    .card-zombies{
        margin-top: 20px;
@@ -60,8 +70,6 @@ div.categories{
        display: flex;
        flex-direction: column;
        text-align: center;
-       width: 235px;
-       height: 285px;
        background-color: $accent-secondary;
        border: $accent 4px solid;
        border-radius: 20px;
@@ -74,5 +82,32 @@ div.categories{
            font-weight: normal;
            word-break: normal;
        }
+
+       @media screen and (min-width:960px) {
+        &{
+            width: 235px;
+            height: 285px;
+        }
+    }
+       @media screen and (max-width:768px) {
+        &{
+            width: 200px;
+            height: 230px;
+            h2{
+                font-size: 1.2em;
+                width: 190px;
+            }
+        }
+    }
+        @media screen and (max-width:576px) {
+            &{
+                width: 150px;
+                height: 175px;
+                h2{
+                    font-size: 1em;
+                    width: 145px;
+                }
+            }
+        }
    }
 }
