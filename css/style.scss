@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
-@import url("db.onlinewebfonts.com/c/d1f1fb1fc64a8b1e61ca204d3ec1e6a2?family=Brianne's+hand");
+@import url("https://db.onlinewebfonts.com/c/d1f1fb1fc64a8b1e61ca204d3ec1e6a2?family=Brianne's+hand");
 
 @import "./variables";
 
@@ -19,12 +19,12 @@ body{
 //   }
 
 @font-face {font-family: $font-family; 
-    src: url("//db.onlinewebfonts.com/t/d1f1fb1fc64a8b1e61ca204d3ec1e6a2.eot"); 
-    src: url("//db.onlinewebfonts.com/t/d1f1fb1fc64a8b1e61ca204d3ec1e6a2.eot?#iefix") format("embedded-opentype"), 
-    url("//db.onlinewebfonts.com/t/d1f1fb1fc64a8b1e61ca204d3ec1e6a2.woff2") format("woff2"), 
-    url("//db.onlinewebfonts.com/t/d1f1fb1fc64a8b1e61ca204d3ec1e6a2.woff") format("woff"), 
-    url("//db.onlinewebfonts.com/t/d1f1fb1fc64a8b1e61ca204d3ec1e6a2.ttf") format("truetype"), 
-    url("//db.onlinewebfonts.com/t/d1f1fb1fc64a8b1e61ca204d3ec1e6a2.svg#Brianne's hand") format("svg"); }
+    src: url("https://db.onlinewebfonts.com/t/d1f1fb1fc64a8b1e61ca204d3ec1e6a2.eot"); 
+    src: url("https://db.onlinewebfonts.com/t/d1f1fb1fc64a8b1e61ca204d3ec1e6a2.eot?#iefix") format("embedded-opentype"), 
+    url("https://db.onlinewebfonts.com/t/d1f1fb1fc64a8b1e61ca204d3ec1e6a2.woff2") format("woff2"), 
+    url("https://db.onlinewebfonts.com/t/d1f1fb1fc64a8b1e61ca204d3ec1e6a2.woff") format("woff"), 
+    url("https://db.onlinewebfonts.com/t/d1f1fb1fc64a8b1e61ca204d3ec1e6a2.ttf") format("truetype"), 
+    url("https://db.onlinewebfonts.com/t/d1f1fb1fc64a8b1e61ca204d3ec1e6a2.svg#Brianne's hand") format("svg"); }
 
 * {
     font-family: 'Lato', sans-serif;
