@@ -5,7 +5,7 @@ body {
 }
 
 @font-face {
-  src: url(./Brianne_s_hand.ttf) format("truetype");
+  src: url("./Brianne_s_hand.ttf") format("truetype"), url("./Brianne_s_hand.woff") format("woff");
   font-family: "Brianne's Hand", 'Brianne_s_hand';
 }
 
