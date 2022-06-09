@@ -6,7 +6,7 @@ body {
 
 @font-face {
   font-family: "Brianne's hand";
-  src: url("https://db.onlinewebfonts.com/t/d1f1fb1fc64a8b1e61ca204d3ec1e6a2.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/d1f1fb1fc64a8b1e61ca204d3ec1e6a2.woff") format("woff");
+  src: url("https://cdn.discordapp.com/attachments/884267448910635148/984486988738609202/brianneshand.woff2") format("woff2"), url("https://cdn.discordapp.com/attachments/884267448910635148/984486988545654904/brianneshand.woff") format("woff"), url("https://cdn.discordapp.com/attachments/884267448910635148/984486988226912326/brianneshand.ttf") format("truetype");
 }
 
 * {
