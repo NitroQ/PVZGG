@@ -44,6 +44,7 @@
 
 .section-2 {
   margin-top: 2vh;
+  text-align: center;
 }
 
 .section-2 img {
@@ -53,6 +54,10 @@
 .section-2 p {
   line-height: 1.5;
   text-align: justify;
+}
+
+img.minimize {
+  width: 80%;
 }
 
 .section-description ul {
@@ -67,7 +72,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 35% !important;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -76,6 +80,24 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (min-width: 960px) {
+  .section-description .shop {
+    width: 35% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-description .shop {
+    width: 50% !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .section-description .shop {
+    width: 100% !important;
+  }
 }
 
 .section-description .card-shop {
@@ -89,8 +111,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  width: 230px;
-  height: 220px;
   background-color: #752E10;
   border: #FDD400 4px solid;
   border-radius: 20px;
@@ -105,14 +125,42 @@
   font-weight: normal;
 }
 
+@media screen and (min-width: 960px) {
+  .section-description .card-shop {
+    width: 230px;
+    height: 220px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-description .card-shop {
+    width: 200px;
+    height: 200px;
+  }
+  .section-description .card-shop h2 {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .section-description .card-shop {
+    width: 150px;
+    height: 150px;
+  }
+  .section-description .card-shop h2 {
+    font-size: 1em;
+  }
+}
+
 .maps {
+  margin-top: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 5vh;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .maps h1 {
