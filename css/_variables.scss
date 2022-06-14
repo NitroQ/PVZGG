@@ -1,6 +1,51 @@
 $body : #185D10;
+$body-light : #6ABA3A;
 $accent: #FDD400;
+$accent-danger: #FF5C5C;
 $accent-secondary: #752E10;
 $text-primary: #FFFFFF;
 $text-secondary: #000000;
 $text-highlight: #FBE574;
+
+.color-body{
+    color: $body;
+}
+.color-blight{
+    color: $body-light;
+}
+
+.color-accent{
+    color: $accent;
+}
+
+.color-secondary{
+    color: $accent-secondary;
+}
+.color-danger{
+    color: $accent-danger;
+}
+.text-primary{
+    color: $text-primary;
+}
+
+.text-secondary{
+    color: $text-secondary;
+}
+
+.text-highlight{
+    color: $text-highlight;
+
+}
+.body-bg{
+    background-color: $body;
+}
+
+.body-accent{
+    background-color: $accent;
+}
+.body-secondary{
+    background-color: $accent-secondary;
+}
+.body-black{
+    background-color: $text-secondary;
+}

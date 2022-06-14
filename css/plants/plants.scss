@@ -114,8 +114,8 @@ h1.large{
     .card-icons{
         display: flex;
         flex-flow: column;
-        img{
-            padding:2px;
+        .icon{
+            margin-top: 3px;
         }
         h2{
             font-weight: normal;

@@ -1,3 +1,51 @@
+.color-body {
+  color: #185D10;
+}
+
+.color-blight {
+  color: #6ABA3A;
+}
+
+.color-accent {
+  color: #FDD400;
+}
+
+.color-secondary {
+  color: #752E10;
+}
+
+.color-danger {
+  color: #FF5C5C;
+}
+
+.text-primary {
+  color: #FFFFFF;
+}
+
+.text-secondary {
+  color: #000000;
+}
+
+.text-highlight {
+  color: #FBE574;
+}
+
+.body-bg {
+  background-color: #185D10;
+}
+
+.body-accent {
+  background-color: #FDD400;
+}
+
+.body-secondary {
+  background-color: #752E10;
+}
+
+.body-black {
+  background-color: #000000;
+}
+
 #banner {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5))), url("../../images/banner/mechanics.png");
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5)), url("../../images/banner/mechanics.png");

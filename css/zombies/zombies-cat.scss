@@ -73,6 +73,11 @@ div.categories{
        background-color: $accent-secondary;
        border: $accent 4px solid;
        border-radius: 20px;
+       transition: transform 0.2s ease-out;
+       &:hover {
+        transform: scale(1.1);
+        transition: transform 0.2s ease;
+        }
        img{
            padding:15px 15px 10px 15px;
        }
