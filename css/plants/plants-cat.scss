@@ -39,6 +39,9 @@
 }
 
 div.categories{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
    padding-top: 8vh;
    h1.next{
        margin-top: 50px;
@@ -69,8 +72,6 @@ div.categories{
        display: flex;
        flex-direction: column;
        text-align: center;
-       width: 230px;
-       height: 220px;
        background-color: $accent-secondary;
        border: $accent 4px solid;
        border-radius: 20px;
@@ -87,10 +88,10 @@ div.categories{
            font-weight: normal;
        }
 
-       @media screen and (min-width:960px) {
+       @media screen and (min-width:769px) {
         &{
-            width: 230px;
-            height: 220px;
+            width: 14.5rem;
+            height: 14rem;
         }
     }
        @media screen and (max-width:768px) {

@@ -120,19 +120,17 @@ img.minimize {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
           align-items: center;
+  -ms-flex-align: center;
 }
 
 @media screen and (min-width: 960px) {
   .section-description .shop {
-    width: 35% !important;
+    width: 40% !important;
   }
 }
 
@@ -144,6 +142,38 @@ img.minimize {
 
 @media screen and (max-width: 576px) {
   .section-description .shop {
+    width: 100% !important;
+  }
+}
+
+.section-description .shop-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 960px) {
+  .section-description .shop-cards {
+    width: 90% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-description .shop-cards {
+    width: 90% !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .section-description .shop-cards {
     width: 100% !important;
   }
 }

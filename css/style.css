@@ -53,8 +53,8 @@ body {
 }
 
 @font-face {
-  font-family: "Brianne's hand";
-  src: url("https:db.onlinewebfonts.com/t/d1f1fb1fc64a8b1e61ca204d3ec1e6a2.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/d1f1fb1fc64a8b1e61ca204d3ec1e6a2.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/d1f1fb1fc64a8b1e61ca204d3ec1e6a2.woff") format("woff");
+  font-family: "Brianne's hand", sans-serif;
+  src: url("./brianneshand.ttf") format("truetype"), url("./brianneshand.woff") format("woff"), url("./brianneshand.woff2") format("woff2"), url("https:db.onlinewebfonts.com/t/d1f1fb1fc64a8b1e61ca204d3ec1e6a2.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/d1f1fb1fc64a8b1e61ca204d3ec1e6a2.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/d1f1fb1fc64a8b1e61ca204d3ec1e6a2.woff") format("woff");
 }
 
 * {
@@ -66,8 +66,13 @@ body {
 }
 
 .brianne {
-  font-family: "Brianne's hand";
+  font-family: "Brianne's hand", sans-serif;
   font-weight: normal;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -79,8 +84,8 @@ body {
 
 @media screen and (max-width: 959px) {
   .container {
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 
@@ -152,12 +157,12 @@ nav {
 
 .navbar li {
   list-style: none;
-  font-family: "Brianne's hand";
+  font-family: "Brianne's hand", sans-serif;
 }
 
 .nav-links a {
   color: #000000;
-  font-family: "Brianne's hand";
+  font-family: "Brianne's hand", sans-serif;
 }
 
 .logo .img-logo {
@@ -221,15 +226,6 @@ input[type=checkbox] {
   .hamburger {
     display: block;
   }
-  .dropdown {
-    left: 50%;
-    top: 30px;
-    -webkit-transform: translateX(30%);
-            transform: translateX(30%);
-  }
-  .dropdown li:hover {
-    background-color: #FBE574;
-  }
 }
 
 .section-description {
@@ -272,6 +268,9 @@ input[type=checkbox] {
   .section-description .description .span-see {
     font-size: 1.3em;
   }
+  .section-description .image-dp {
+    width: 40%;
+  }
   .section-description .image-dp img {
     border: 10px solid #FDD400;
     width: 90%;
@@ -308,7 +307,7 @@ input[type=checkbox] {
   .section-description .image-dp img {
     margin-top: 20px;
     border: 5px solid #FDD400;
-    width: 90%;
+    width: 80%;
   }
 }
 
@@ -451,7 +450,7 @@ footer .footer-links .links {
 
 @media screen and (min-width: 992px) {
   footer .footer-links .links {
-    width: 45%;
+    width: 40%;
   }
 }
 
@@ -474,10 +473,8 @@ footer .footer-links .links ul {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -516,7 +513,7 @@ footer .footer-links .socials {
 @media screen and (min-width: 992px) {
   footer .footer-links .socials {
     padding-left: 30vh;
-    width: 15%;
+    width: 10%;
   }
 }
 
