@@ -88,13 +88,13 @@ div.categories{
            word-break: normal;
        }
 
-       @media screen and (min-width:960px) {
+       @media screen and (min-width:962px) {
         &{
             width: 235px;
             height: 285px;
         }
     }
-       @media screen and (max-width:768px) {
+       @media screen and (max-width:961px) {
         &{
             width: 200px;
             height: 230px;
