@@ -10,9 +10,9 @@ body{
 }
 
 @font-face {font-family: $font-family; 
-    src: url("./brianneshand.ttf") format("truetype"),
-         url("./brianneshand.woff") format("woff"),
-        url("./brianneshand.woff2") format("woff2"),
+    src: url("../css/brianneshand.ttf") format("truetype"),
+         url("../css/brianneshand.woff") format("woff"),
+        url("../css/brianneshand.woff2") format("woff2"),
     url("https://db.onlinewebfonts.com/t/d1f1fb1fc64a8b1e61ca204d3ec1e6a2.ttf") format("truetype"),
     url("https://db.onlinewebfonts.com/t/d1f1fb1fc64a8b1e61ca204d3ec1e6a2.woff2") format("woff2"), 
     url("https://db.onlinewebfonts.com/t/d1f1fb1fc64a8b1e61ca204d3ec1e6a2.woff") format("woff"); }
