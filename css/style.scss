@@ -1,21 +1,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 @import "./variables";
+@import "./font";
 
-$font-family: "Brianne's hand", sans-serif;
+$font-family: 'briannes_handregular', sans-serif;
 //body
 body{
     background-color: $body;
     margin: 0;
 }
 
-@font-face {font-family: $font-family; 
-    src: url("../css/brianneshand.ttf") format("truetype"),
-         url("../css/brianneshand.woff") format("woff"),
-        url("../css/brianneshand.woff2") format("woff2"),
-    url("https://db.onlinewebfonts.com/t/d1f1fb1fc64a8b1e61ca204d3ec1e6a2.ttf") format("truetype"),
-    url("https://db.onlinewebfonts.com/t/d1f1fb1fc64a8b1e61ca204d3ec1e6a2.woff2") format("woff2"), 
-    url("https://db.onlinewebfonts.com/t/d1f1fb1fc64a8b1e61ca204d3ec1e6a2.woff") format("woff"); }
+// @font-face {
+//     font-family: $font-family; 
+//     src: url('./brianneshand-webfont.woff2') format('woff2'),
+//          url('./brianneshand-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+//  }
 
 * {
     font-family: 'Lato', sans-serif;
