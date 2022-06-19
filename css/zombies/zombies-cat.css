@@ -156,10 +156,12 @@ div.categories .card-zombies:hover {
 }
 
 div.categories .card-zombies img {
-  padding: 15px 15px 10px 15px;
+  padding: 15px 15px 0px 15px;
 }
 
 div.categories .card-zombies h2 {
+  margin-top: auto;
+  margin-bottom: auto;
   width: 220px;
   color: white;
   font-weight: normal;
