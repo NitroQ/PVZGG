@@ -154,6 +154,12 @@
   padding-left: 10px;
 }
 
+.achievement .ach-description h1 {
+  font-family: 'briannes_handregular';
+  font-weight: normal;
+  font-size: 2.2em;
+}
+
 .achievement .ach-description h3 {
   margin-top: 10px;
   width: 90%;
