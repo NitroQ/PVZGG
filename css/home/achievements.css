@@ -150,6 +150,10 @@
   height: 115px;
 }
 
+.achievement .ach-img img {
+  border-radius: 10px;
+}
+
 .achievement .ach-description {
   padding-left: 10px;
 }
