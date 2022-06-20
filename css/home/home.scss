@@ -44,6 +44,7 @@ div.section-page{
          flex-wrap: wrap;
          justify-content: center;
          align-items: center;
+ 
      }
     .card-category{
         margin-right: 15px;
@@ -100,3 +101,10 @@ div.section-page{
 
 }
         
+#strategy{
+    @media screen and (max-width: 960px) {
+        &{
+            margin-top: 20vh;
+        }
+    }
+}

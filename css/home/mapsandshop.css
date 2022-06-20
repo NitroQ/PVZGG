@@ -192,6 +192,8 @@ img.minimize {
   background-color: #752E10;
   border: #FDD400 4px solid;
   border-radius: 20px;
+  height: auto;
+  padding-bottom: 15px;
 }
 
 .section-description .card-shop img {
@@ -206,14 +208,12 @@ img.minimize {
 @media screen and (min-width: 960px) {
   .section-description .card-shop {
     width: 230px;
-    height: 220px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .section-description .card-shop {
     width: 200px;
-    height: 200px;
   }
   .section-description .card-shop h2 {
     font-size: 1.2em;
@@ -223,7 +223,6 @@ img.minimize {
 @media screen and (max-width: 576px) {
   .section-description .card-shop {
     width: 150px;
-    height: 150px;
   }
   .section-description .card-shop h2 {
     font-size: 1em;
@@ -252,8 +251,8 @@ img.minimize {
   border: #FDD400 5px solid;
   border-radius: 25px;
   background-color: #752E10;
-  width: 670px;
-  height: 610px;
+  width: 40%;
+  height: auto;
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -264,8 +263,23 @@ img.minimize {
           flex-direction: column;
 }
 
+@media screen and (min-width: 960px) {
+  .maps .map1 {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .maps .map1 {
+    width: 80%;
+  }
+}
+
 .maps .map1 .map-img {
-  padding: 5px;
+  padding: 8px;
+}
+
+.maps .map1 .map-img img {
   width: 100%;
 }
 

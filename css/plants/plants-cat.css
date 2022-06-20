@@ -154,6 +154,8 @@ div.categories .card-plants {
   transition: -webkit-transform 0.2s ease-out;
   transition: transform 0.2s ease-out;
   transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  height: auto;
+  padding-bottom: 15px;
 }
 
 div.categories .card-plants:hover {
@@ -177,14 +179,12 @@ div.categories .card-plants h2 {
 @media screen and (min-width: 769px) {
   div.categories .card-plants {
     width: 14.5rem;
-    height: 14rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   div.categories .card-plants {
     width: 200px;
-    height: 200px;
   }
   div.categories .card-plants h2 {
     font-size: 1.2em;
@@ -194,7 +194,6 @@ div.categories .card-plants h2 {
 @media screen and (max-width: 576px) {
   div.categories .card-plants {
     width: 150px;
-    height: 150px;
   }
   div.categories .card-plants h2 {
     font-size: 1em;

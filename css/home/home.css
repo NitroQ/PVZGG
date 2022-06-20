@@ -166,4 +166,10 @@ div.section-page .card-category h2 {
             align-items: center;
   }
 }
+
+@media screen and (max-width: 960px) {
+  #strategy {
+    margin-top: 20vh;
+  }
+}
 /*# sourceMappingURL=home.css.map */

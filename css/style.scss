@@ -3,20 +3,12 @@
 @import "./variables";
 @import "./font";
 
-$font-family: 'briannes_handregular', sans-serif;
+$font-family: "Brianne's hand",'briannes_handregular', sans-serif;
 //body
 body{
     background-color: $body;
     margin: 0;
 }
-
-// @font-face {
-//     font-family: $font-family; 
-//     src: url('./brianneshand-webfont.woff2') format('woff2'),
-//          url('./brianneshand-webfont.woff') format('woff');
-//     font-weight: normal;
-//     font-style: normal;
-//  }
 
 * {
     font-family: 'Lato', sans-serif;
@@ -89,6 +81,7 @@ nav{
     position: fixed;
     width: 100%;
     z-index: 999;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 } 
 .navbar {
     display: flex;
@@ -143,14 +136,16 @@ input[type=checkbox]{
     display:none;
     position: absolute;
     background-color: $accent;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     right: 0;
     left: 0;
     text-align: center;
     padding: 16px 0;
+    transition: 0.3s ease-out;
     li:hover {
         display: inline-block;
         background-color:$text-highlight;
-        transition: 0.3s ease;
+        transition: 0.3s ease-in;
        }
     li + li {
     margin-top: 12px;
@@ -220,6 +215,8 @@ input[type=checkbox]{
             flex-direction: column;
             .description{
                 text-align: center;
+                padding-left: 10px;
+                padding-right: 10px;
                &.order-1{
                     order: -1;
                 }
@@ -311,7 +308,7 @@ footer{
         .logo{
             @media screen and (min-width:992px) {
                 &{
-                    width: 20%;
+                    width: 25%;
                 }
             }
             @media screen and (max-width:991px) {
@@ -335,7 +332,7 @@ footer{
         .links{
             @media screen and (min-width:992px) {
                 &{
-                    width: 40%;
+                    width: auto;
                 }
             }
             @media screen and (max-width:991px) {
@@ -349,9 +346,10 @@ footer{
             padding-top: 3vh;
             ul{
                 display: flex;
+              width: 100%;
                 @media screen and (min-width:992px) {
                     &{
-                        justify-content: space-between;
+                        gap: 15px;
                         flex-wrap: wrap;
                     }
                 }
@@ -359,7 +357,6 @@ footer{
                     &{
                         flex-flow:column;
                         gap:10px;
-
                     }
                 }
 
@@ -387,8 +384,8 @@ footer{
             padding-top: 3vh;
             @media screen and (min-width:992px) {
                 &{
-                    padding-left: 30vh;
-                    width: 10%;
+                    padding-left: 15vh;
+                    width: auto;
                 }
             }
             @media screen and (max-width:991px) {
