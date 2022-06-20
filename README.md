@@ -22,13 +22,13 @@ The goal of the website is to provide useful knowledge, helpful tips and informa
 - This section organizes all of the zombies in Plants vs. Zombies into categories. The categories include Almanac and Non-Almanac. A brief yet instructive description of each zombie is also included.
 
 ### 🗺️ 🛒 Maps and Shop Page
--The first part of the page previews all the anticipated maps in the Plants vs. Zombies game, including Lawn (day and night versions), Pool (day and night versions), and Roof (day and night version). The second portion, on the other hand, previews the in-game components that may be purchased or upgraded in Crazy Dave's Twiddy Dinkies (shop name), as well as their costs.
+- The first part of the page previews all the anticipated maps in the Plants vs. Zombies game, including Lawn (day and night versions), Pool (day and night versions), and Roof (day and night version). The second portion, on the other hand, previews the in-game components that may be purchased or upgraded in Crazy Dave's Twiddy Dinkies (shop name), as well as their costs.
 
 ### ⚙️ Mechanics Page
--This section of the website is dedicated to providing the modes available and their description. Adventure Mode, Survival Mode, Mini-Games, and Puzzle Mode are those that were given mechanics information.
+- This section of the website is dedicated to providing the modes available and their description. Adventure Mode, Survival Mode, Mini-Games, and Puzzle Mode are those that were given mechanics information.
 
 ### 🏅 Achievements Page
--This page’s sole purpose is to provide all the possible accomplishments you can be awarded with in the game Plants vs. Zombies.
+- This page’s sole purpose is to provide all the possible accomplishments you can be awarded with in the game Plants vs. Zombies.
 
 
 ## Contributors
