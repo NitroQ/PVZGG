@@ -12,9 +12,9 @@ The goal of this project is to demonstrate our skills using Raw HTML and CSS to 
 The goal of the website is to provide useful knowledge, helpful tips and information about the game, Plants Vs. Zombies, exclusively the Desktop edition of the game. In order to walkthrough gamers in what they could expect or possibly use in a certain level or when they are about to get onto that level.
 
 ### Contributors
-👧🏻Vergara, Rei Krishna
-👧Mendoza, Niel Sergianne
-👧🏽Duco, Clarise Annely
-👦Silva, Ram Henrick
-👦🏼Ramores III, Juancho
+👧🏻Vergara, Rei Krishna <br>
+👧Mendoza, Niel Sergianne <br>
+👧🏽Duco, Clarise Annely <br>
+👦Silva, Ram Henrick <br>
+👦🏼Ramores III, Juancho <br>
 👦🏻Gesmundo, Frank Vincent
